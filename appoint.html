@@ -1,0 +1,152 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" 
+integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"
+ integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <style >
+      *{
+    margin: 0px;
+    padding: 0px;
+}
+        p{
+            font-size: 17px;;
+            font-style: Arial;
+            color: black;
+            text-align: left;
+        }
+  .banner-card {
+    position: relative;
+    
+}
+.banner-card img{
+    max-width: 100%;
+    height: auto;
+}
+.navbar{
+    overflow: hidden;
+    background: #fff;
+    margin-top: -5px;
+}
+.navbar a{
+    color: #000;
+    text-align: center;
+    font-size: 14px;
+    width: 100px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}    
+footer{
+    padding: 12px;
+    background-color: #000;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+} 
+    </style>
+</head>
+<body>
+        <h1>HealthCare</h1>
+        <form action="forms/index.php" method="post" role="form" class="php-email-form"></form>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+            </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="home.html">Home </a></li>
+                <li><a class="nav-link scrollto active" href="about.html">About</a></li>  
+                <li><a href="contact.html">Contact</a></li>
+                  <li><a href="doctor.html">Doctor </a></li>
+                  <li><a href="dept.html">Department </a></li>
+                  <li><a href="appoint.html" >Appointment</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#">Register</a></li>
+                  <li><a href="#">Login</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </nav>
+    <section id="appointment" class="appointment section-bg">
+        <div class="container">
+    
+          <div class="section-title">
+            <h2>Make an Appointment</h2>
+
+
+          </div>
+          <fieldset>
+          <form action="forms/index.php" method="post" role="form" class="php-email-form">
+            <div class="row">
+              <div class="col-md-4 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                <div class="validate"></div>
+              </div>
+              <div class="col-md-4 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+                <div class="validate"></div>
+              </div>
+              <div class="col-md-4 form-group mt-3 mt-md-0">
+                <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                <div class="validate"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 form-group mt-3">
+                <input type="date" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                <input type="time" name="time" class="form-control datepicker" id="time" placeholder="Appointment-time">
+                <div class="validate"></div>
+              </div>
+              <div class="col-md-4 form-group mt-3">
+                <select name="department" id="department" class="form-select">
+                  <option value="">Select Department</option>
+                  <option value="Cardiologist">Cardiologist</option>
+                  <option value="Gynecologist">Gynecologist</option>
+                </select>
+                <div class="validate"></div>
+              </div>
+              <div class="col-md-4 form-group mt-3">
+                <select name="doctor" id="doctor" class="form-select">
+                  <option value="">Select Doctor</option>
+                  <option value="Doctor 1">Dr Rajesh Bhat U</option>
+                  <option value="Doctor 2">Dr Kavitha Dsouza</option>
+                </select>
+                <div class="validate"></div>
+              </div>
+            </div>
+    
+            <div class="form-group mt-3">
+              <div class="validate"></div>
+            </div>
+            <div class="text-center"><button type="submit">Book Appointment</button></div>
+              
+</div>
+</fieldset>
+          </form>
+    
+        </div>
+      </section>
+</body>
+</html>

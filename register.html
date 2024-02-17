@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Appointment Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    input[type="text"], input[type="email"], input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button {
+      background-color:white;
+      font-size: 150%;
+      text-align: center;
+      padding: 10px;
+      font-color:white;
+    }
+    h2{
+      padding: 20px;
+      background-color: #333;
+      text-align: center;
+      color:white;
+    }
+    .container button {
+            background-color: #DF2D48;
+            color: white;
+            cursor: pointer;
+             padding: 3%;
+             font-size: 150%;
+        }
+    .container button:hover {
+            background-color: white;
+        }
+
+  </style>
+</head>
+<body>
+  <h2>Doctor Appointment Registration</h2>
+  <form action="registration_process.php" method="post">
+    <label for="fullname">Full Name</label>
+    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+
+    <label for="email">Email</label>
+    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required>
+    <button><a href="login.html">Register</a></button>
+  </form>
+</body>
+</html>
